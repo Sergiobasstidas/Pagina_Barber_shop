@@ -1,0 +1,23 @@
+p {
+    font-weight: $regular;
+    font-size: $medium;
+    font-family: $roboto;
+}
+h1 {
+    color: white;
+    font-size: $xx-large;
+    font-family: $playfair;
+    font-weight: $black;
+    font-style: italic;
+}
+@media (max-width: 320px) {
+    h1 {
+        @include titulo-sm;
+    }
+}
+h4 {
+    font-family: $playfair;
+    font-size: $x-large;
+    font-weight: $black;
+    font-style: italic;
+}

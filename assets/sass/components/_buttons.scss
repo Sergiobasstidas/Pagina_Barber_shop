@@ -1,0 +1,30 @@
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.boton__boton:hover {
+    @include hover-state;
+}
+
+.boton__boton:focus {
+    @include focus-state;
+}
+
+@media (max-width: 320px) {
+    .button {
+        justify-content: center;
+    }
+        .boton__boton {
+            @include small-button;
+        }   
+}
+
+@media(min-width: 321px) {
+    .boton__boton {
+        @include medium-button;
+    }
+    
+}

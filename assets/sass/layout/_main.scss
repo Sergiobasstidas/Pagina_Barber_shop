@@ -1,0 +1,18 @@
+@media (min-width: 321px) {
+    .main {
+        @include padding;
+    }
+    .main__texto {
+        line-height: $interlineado1; 
+    }
+
+}
+
+@media (max-width: 320px) {
+    .main__texto {
+        @include padding-sm;
+        line-height: $interlineado-sm;
+    }
+}
+
+

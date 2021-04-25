@@ -1,0 +1,8 @@
+.logo {
+    @include bigote;
+}
+
+.division {
+    border-top: 0.1px solid $nickel;
+    margin-top: 60px;
+}
