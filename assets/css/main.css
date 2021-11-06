@@ -10056,7 +10056,8 @@ h4 {
 .banner {
   background-image: url(../../assets/images/post-image.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   height: 900px;
   width: 100%;
   display: flex;
@@ -10112,11 +10113,17 @@ h4 {
 
 @media (min-width: 321px) {
   .main {
-    padding: 40px 100px 40px;
+    padding: 40px 300px 40px 300px;
+    text-align: justify;
   }
 
   .main__texto {
-    line-height: 3;
+    line-height: 2;
+  }
+
+  .main__texto--titulo {
+    font-weight: 700 !important;
+    font-size: 18px !important;
   }
 }
 @media (max-width: 320px) {
